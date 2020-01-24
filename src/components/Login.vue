@@ -41,9 +41,9 @@ export default {
         if (!res) return 
       })
       this.$http.post("login", this.users).then(res => {
-        console.log(res);
         window.sessionStorage.setItem("token", res.data.data.token);
         this.$router.push("/home");
+        this.$message.success('登录成功');
       });
     },
     resert() {
