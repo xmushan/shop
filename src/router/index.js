@@ -29,7 +29,18 @@ const routes = [{
       path: '/users',
       name: 'user',
       component: () => import('../components/Users/Users.vue')
-    }]
+    },
+    {
+      path:'/roles',
+      name:'roles',
+      component:() => import ('../components/power/Roles.vue')
+    },
+    {
+      path:"/rights",
+      name:'rights',
+      component: () => import ('../components/power/Rights.vue')
+    }
+  ]
   },
 
 
