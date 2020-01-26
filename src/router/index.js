@@ -20,27 +20,47 @@ const routes = [{
     children: [
 
       {
-        path:'/welcome',
-        name:'welcome',
+        path: '/welcome',
+        name: 'welcome',
         component: () => import('../components/Welcome.vue')
       },
-      
+
       {
-      path: '/users',
-      name: 'user',
-      component: () => import('../components/Users/Users.vue')
-    },
-    {
-      path:'/roles',
-      name:'roles',
-      component:() => import ('../components/power/Roles.vue')
-    },
-    {
-      path:"/rights",
-      name:'rights',
-      component: () => import ('../components/power/Rights.vue')
-    }
-  ]
+        path: '/users',
+        name: 'user',
+        component: () => import('../components/Users/Users.vue')
+      },
+      {
+        path: '/roles',
+        name: 'roles',
+        component: () => import('../components/power/Roles.vue')
+      },
+      {
+        path: "/rights",
+        name: 'rights',
+        component: () => import('../components/power/Rights.vue')
+      },
+      {
+        path: '/goods',
+        name: 'goods',
+        component: () => import('../components/goods/Goods.vue')
+      },
+      {
+        path: '/params',
+        name: '/params',
+        component: () => import('../components/goods/Params.vue')
+      }, 
+      {
+        path: '/categories',
+        name: "categories",
+        component: () => import('../components/goods/Categories.vue')
+      },
+      {
+        path:'/add',
+        name:'add',
+        component:() => import ('../components/goods/Add.vue')
+      }
+    ]
   },
 
 
