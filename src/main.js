@@ -4,6 +4,7 @@ import router from './router'
 import './plugins/element.js'
 import axios from 'axios'
 import './assets/globol.css'
+import TreeTable from 'vue-table-with-tree-grid'
 //导入文本编辑器
 import VueQuillEditor from 'vue-quill-editor'
 //导入文本编辑器的样式
@@ -13,6 +14,8 @@ import 'quill/dist/quill.bubble.css'
 
 //注册 全局使用
 Vue.use(VueQuillEditor)
+
+Vue.component('tree-table', TreeTable)
 
 
 
