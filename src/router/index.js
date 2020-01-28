@@ -49,17 +49,27 @@ const routes = [{
         path: '/params',
         name: '/params',
         component: () => import('../components/goods/Params.vue')
-      }, 
+      },
       {
         path: '/categories',
         name: "categories",
         component: () => import('../components/goods/Categories.vue')
       },
       {
-        path:'/add',
-        name:'add',
-        component:() => import ('../components/goods/Add.vue')
-      }
+        path: '/add',
+        name: 'add',
+        component: () => import('../components/goods/Add.vue')
+      },
+      {
+        path: '/orders',
+        name: 'orders',
+        component: () => import('../components/Orders.vue')
+      },
+      {
+        path: '/reports',
+        name: 'reports',
+        component: () => import('../components/Reports.vue')
+      },
     ]
   },
 

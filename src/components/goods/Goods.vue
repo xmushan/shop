@@ -60,7 +60,6 @@ export default {
           params: this.queryInfo
         })
         .then(res => {
-          console.log(res);
           this.goodsList = res.data.data.goods;
           this.total = res.data.total;
         });

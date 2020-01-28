@@ -167,7 +167,6 @@ export default {
         })
         .then(res => {
           this.userList = res.data.data.users;
-          console.log(this.userList);
         });
     },
     handleCurrentChange(newNum) {
@@ -190,7 +189,6 @@ export default {
     },
     edit(id) {
       this.$http.get(`users/${id}`).then(res => {
-        console.log(res);
         this.editForm = res.data.data;
       });
       this.editVisible = true;
@@ -226,7 +224,6 @@ export default {
             
         })
         this.$http.get(`roles`).then(res => {
-            console.log(res);
             this.roleList=res.data.data;
         })
       this.Visible = true;
